@@ -1,0 +1,23 @@
+Parameters:
+  Region: cn-hangzhou
+  Name: nginx-migrate-apig
+SceneMetadata:
+  Name:
+    zh-cn: Nginx前端应用迁移到云原生API网关
+    en: Nginx Migrate Apig
+  Description:
+    zh-cn: 部署在Nginx上的前端应用迁移到云原生API网关
+    en: Migrate front-end applications deployed on Nginx to cloud-native API gateway
+  Logo: resources/icons/scence_logo.png
+SceneProfiles:
+  - DisplayName:
+      zh-cn: Nginx前端应用迁移到云原生API网关
+      en: Nginx Migrate Apig
+    Template: templates/msa.yml
+    Documentation:
+      zh-cn: docs/zh-cn/index.md
+    Parameters:
+      Backend:
+        Cpu: 1
+        Memory: 4096
+        Handler: index.handler
