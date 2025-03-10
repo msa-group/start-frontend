@@ -1,0 +1,23 @@
+Parameters:
+  Region: cn-hangzhou
+  Name: oss-website-apig
+SceneMetadata:
+  Name:
+    zh-cn: OSS前端网站托管集成云原生API网关
+    en: OSS front-end website hosting integrated with cloud native API gateway
+  Description:
+    zh-cn: 基于云原生API网关和阿里云 OSS 实现前端网站托管
+    en: Implementing front-end website hosting based on cloud-native API gateway and Alibaba Cloud OSS
+  Logo: resources/icons/scence_logo.png
+SceneProfiles:
+  - DisplayName:
+      zh-cn: OSS前端网站托管集成云原生API网关
+      en: OSS front-end website hosting integrated with cloud native API gateway
+    Template: templates/msa.yml
+    Documentation:
+      zh-cn: docs/zh-cn/index.md
+    Parameters:
+      Backend:
+        Cpu: 1
+        Memory: 4096
+        Handler: index.handler
