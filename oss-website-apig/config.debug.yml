@@ -7,7 +7,7 @@ SceneProfiles:
   - DisplayName:
       zh-cn: 基于云原生 API 网关和阿里云 OSS 实现前端网站托管
       en: Oss Website
-    Template: "msa/msa.yml"
+    Template: "templates/msa.yml"
     Parameters:
       Service:
         Name: "oss-website"
