@@ -1,16 +1,14 @@
 Parameters:
   Region: "cn-hangzhou"
-  Name: "basic-auth-plugin"
+  Name: "oss-website"
+  GatewayId: gw-cu9g7dem1hkn32ee70bg
+  EnvironmentId: env-cu9g82mm1hkui0vcv5eg
 SceneProfiles:
   - DisplayName:
-      zh-cn: Nginx前端应用迁移到云原生API网关
-      en: Nginx Migrate Apig
-    Template: "templates/msa.yml"
+      zh-cn: 基于云原生 API 网关和阿里云 OSS 实现前端网站托管
+      en: Oss Website
+    Template: "msa/msa.yml"
     Parameters:
-      HttpApi:
-        GatewayId: gw-cu9g7dem1hkn32ee70bg
-        EnvironmentId: env-cu9g82mm1hkui0vcv5eg
-      Backend:
-        Cpu: 1
-        Memory: 4096
-        Handler: index.handler
+      Service:
+        Name: "oss-website"
+        OssBucketName: "apig-oss-integration"
